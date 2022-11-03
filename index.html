@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Rich Weather</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+<h1 class="text-center">Emergency Alerts By State</h1>
+<p class="text-center text-secondary">Learn about severe weather from real time weather alerts in your state!</p>
+<p class="text-center text-secondary">A project by Jacob Woods</p>
+<p class="text-center text-secondary">Severe Weather And Your Major (IT)</p>
+<!--Create selector of state abbreviations with submit button-->
+<div class="card w-75 mx-auto bg-primary p-5">
+    <h5 class = "text-light">Select State</h5>
+    <hr>
+    <select id = "alertType">
+        <option value="AL">Alabama (AL)</option>
+        <option value="AK">Alaska (AK)</option>
+        <option value="AZ">Arizona (AZ)</option>
+        <option value="AR">Arkansas (AR)</option>
+        <option value="CA">California (CA)</option>
+        <option value="CO">Colorado (CO)</option>
+        <option value="CT">Connecticut (CT)</option>
+        <option value="DE">Delaware (DE)</option>
+        <option value="DC">District Of Columbia (DC)</option>
+        <option value="FL">Florida (FL)</option>
+        <option value="GA">Georgia (GA)</option>
+        <option value="HI">Hawaii (HI)</option>
+        <option value="ID">Idaho (ID)</option>
+        <option value="IL">Illinois (IL)</option>
+        <option value="IN">Indiana (IN)</option>
+        <option value="IA">Iowa (IA)</option>
+        <option value="KS">Kansas (KS)</option>
+        <option value="KY">Kentucky (KY)</option>
+        <option value="LA">Louisiana (LA)</option>
+        <option value="ME">Maine (ME)</option>
+        <option value="MD">Maryland (MD)</option>
+        <option value="MA">Massachusetts (MA)</option>
+        <option value="MI">Michigan (MI)</option>
+        <option value="MN">Minnesota (MN)</option>
+        <option value="MS">Mississippi (MS)</option>
+        <option value="MO">Missouri (MO)</option>
+        <option value="MT">Montana (MT)</option>
+        <option value="NE">Nebraska (NE)</option>
+        <option value="NV">Nevada (NV)</option>
+        <option value="NH">New Hampshire (NH)</option>
+        <option value="NJ">New Jersey (NJ)</option>
+        <option value="NM">New Mexico (NM)</option>
+        <option value="NY">New York (NY)</option>
+        <option value="NC">North Carolina (NC)</option>
+        <option value="ND">North Dakota (ND)</option>
+        <option value="OH">Ohio (OH)</option>
+        <option value="OK">Oklahoma (OK)</option>
+        <option value="OR">Oregon (OR)</option>
+        <option value="PA">Pennsylvania (PA)</option>
+        <option value="RI">Rhode Island (RI)</option>
+        <option value="SC">South Carolina (SC)</option>
+        <option value="SD">South Dakota (SD)</option>
+        <option value="TN">Tennessee (TN)</option>
+        <option value="TX">Texas (TX)</option>
+        <option value="UT">Utah (UT)</option>
+        <option value="VT">Vermont</option>
+        <option value="VA">Virginia</option>
+        <option value="WA">Washington</option>
+        <option value="WV">West Virginia</option>
+        <option value="WI">Wisconsin</option>
+        <option value="WY">Wyoming</option>
+    </select>
+    <hr>
+    <button type="submit" id = "getAlerts">Submit</button> 
+</div>
+
+
+<div id="alerts"></div>
+<script src="app.js"></script>
+</body>
+</html>
